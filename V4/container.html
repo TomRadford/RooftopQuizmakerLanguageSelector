@@ -1,0 +1,38 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="container.css">
+    <title>iSpring Quiz Maker</title>
+    <meta name="description" content="iSpring Quiz Maker Container">
+    <meta name="author" content="Brandon Rudi Bezuidenhout">
+    <script src="https://kit.fontawesome.com/a0d7570aa8.js" crossorigin="anonymous"></script>
+    <script src="container.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body onload="initQuiz()">
+<div>
+    <!-- <button id="quiz-show" class="button-warning pure-button" onclick="showQuiz()">Take the quiz!</button> -->
+</div>
+<div class="container" id="container">
+    <div class="popover" id="popover">
+        <!-- <i id="quiz-close-button" class="fas fa-times" onclick="hideQuiz()"></i> -->
+        <img id="landing-img" class="quiz-landing-page" src="../assets/landing.png">
+        <form onsubmit="submitLanguage(event)" class="language-form">
+            <select name="cars" id="languages" class="select-css" onchange="setLanguage(event)">
+                <option class="language-option" value="english">English</option>
+                <option class="language-option" value="عربى">عربى</option>
+                <option class="language-option" value="русский">русский</option>
+                <option class="language-option" value="Español">Español</option>
+                <option class="language-option" value="Français">Français</option>
+                <option class="language-option" value="简体中文">简体中文</option>              
+            </select>
+            <br><br>
+            <button type="submit" value="" class="button-warning pure-button">Start Quiz ></button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
